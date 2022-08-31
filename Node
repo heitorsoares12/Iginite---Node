@@ -1,0 +1,52 @@
+Node
+version - 12.20.1
+
+HTTP Codes
+
+- 1XX - Informativo - a solicitação foi aceita ou o processo continua em andamento
+
+- 2XX - Confirmação
+	- 200 - Requsição bem sucedida
+	- 201 - Created = Geralmente usado para POST após uma inserção
+
+- 3XX - Redirecionamento
+	- 301 - Moved Permanently
+	- 302 - Moved
+
+- 4XX - Erro do cliente
+	- 400 - Bad Request
+	- 401 - Unauthorized
+	- 403 - Forbidden
+	- 404 - Not Found
+	- 422 - Unprocessable Entity
+
+- 5XX - Erro no servidor - o servidor falhou ao concluir a solicitção
+	- 500 - Internal Server Error
+	- 502 - Bad Gateway
+
+================================================================
+
+GET - Buscar uma informação dentro do servidor
+POST - Inserir uma informação no servidor
+PUT - Alterar uma informação no servidor
+PATCH - Alterar uma informação específica
+DELETE - Deletar uma informação no servidor
+
+================================================================
+TIPOS DE PARÂMETROS
+
+Route Params -> Identificar um recurso pra editar, deletar ou buscar
+Query Params -> Paginação / Filtro
+Body Params -> Os objetos que vamos passar na inserção ou alteração(JSON)
+
+================================================================
+Boas práticas API Rest
+
+- A utilização corretos dos métodos HTTP
+- A utilização correta dos status no retorno das respostas
+- Padrão de nomenclatura
+	- Busca de usuários - GET
+	- Busca de usuário por id - GET
+	- Busca de endereço do usuário - GET
+	- Deleção de um usuário - DELETE
+	- Atualização do status do usuário - PATCH
